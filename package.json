@@ -19,6 +19,7 @@
     "express": "^4.17.2",
     "express-rate-limit": "^6.2.0",
     "helmet": "^5.0.2",
+    "joi": "^17.6.0",
     "mongoose": "^6.2.0",
     "morgan": "^1.10.0"
   },
