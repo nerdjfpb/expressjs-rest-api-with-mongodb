@@ -90,7 +90,7 @@ router.put('/:id', async (req, res) => {
   // find Id and updated it by mongoose
   const todo = await Todo.findByIdAndUpdate(
     req.params.id,
-    { name: req?.body?.title, completed: req?.body?.completed },
+    { title: req?.body?.title, completed: req?.body?.completed },
     {
       new: true,
     }
