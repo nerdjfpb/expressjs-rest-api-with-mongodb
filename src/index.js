@@ -19,7 +19,7 @@ const limiter = RateLimit({
 const app = Express()
 
 // connect to db
-Mongoose.connect('mongodb://localhost/demotodo')
+Mongoose.connect(process.env.DATABASE_URL)
   .then(() => console.log('Connected to MongoDB...'))
   .catch((err) => console.log(`Could not connect to MongoDB...${err}`))
 
